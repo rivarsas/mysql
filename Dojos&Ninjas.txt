@@ -1,0 +1,32 @@
+INSERT INTO `dojos_ninjas`.`dojos` (`name`, `created_at`, `updated_at`) VALUES ('Seul', '2022-08-09', '2022-08-09');
+INSERT INTO `dojos_ninjas`.`dojos` (`name`, `created_at`, `updated_at`) VALUES ('Tokio', '2022-08-09', '2022-08-09');
+INSERT INTO `dojos_ninjas`.`dojos` (`name`, `created_at`, `updated_at`) VALUES ('Nagasaki', '2022-08-09', '2022-08-09');
+
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM dojos_ninjas.dojos 
+
+INSERT INTO `dojos_ninjas`.`dojos` (`name`, `created_at`, `updated_at`) VALUES ('Seul', '2022-08-09', '2022-08-09');
+INSERT INTO `dojos_ninjas`.`dojos` (`name`, `created_at`, `updated_at`) VALUES ('Tokio', '2022-08-09', '2022-08-09');
+INSERT INTO `dojos_ninjas`.`dojos` (`name`, `created_at`, `updated_at`) VALUES ('Nagasaki', '2022-08-09', '2022-08-09');
+
+
+INSERT INTO `dojos_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `created_at`, `updated_at`, `dojo_id`) VALUES ('Albert', 'White', '12', '2022-08-09', '2022-08-09', '1');
+INSERT INTO `dojos_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `created_at`, `updated_at`, `dojo_id`) VALUES ('Lec', 'Lee', '13', '2022-08-09', '2022-08-09', '1');
+INSERT INTO `dojos_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `created_at`, `updated_at`, `dojo_id`) VALUES ('Bro', 'James', '54', '2022-08-09', '2022-08-09', '1');
+INSERT INTO `dojos_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `created_at`, `updated_at`, `dojo_id`) VALUES ('Vase', 'Rock', '14', '2022-08-09', '2022-08-09', '2');
+INSERT INTO `dojos_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `created_at`, `updated_at`, `dojo_id`) VALUES ('Bass', 'Pro', '56', '2022-08-09', '2022-08-09', '2');
+INSERT INTO `dojos_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `created_at`, `updated_at`, `dojo_id`) VALUES ('Veck', 'Boss', '25', '2022-08-09', '2022-08-09', '2');
+INSERT INTO `dojos_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `created_at`, `updated_at`, `dojo_id`) VALUES ('Guio', 'Black', '26', '2022-08-09', '2022-08-09', '3');
+INSERT INTO `dojos_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `created_at`, `updated_at`, `dojo_id`) VALUES ('Afes', 'Freeman', '26', '2022-08-09', '2022-08-09', '3');
+INSERT INTO `dojos_ninjas`.`ninjas` (`first_name`, `last_name`, `age`, `created_at`, `updated_at`, `dojo_id`) VALUES ('Esra', 'Miller', '40', '2022-08-09', '2022-08-09', '3');
+
+
+
+
+SELECT * FROM dojos_ninjas.ninjas
+WHERE dojo_id=1;
+
+SELECT * FROM dojos_ninjas.ninjas
+WHERE dojo_id=3;
+
+SELECT dojo_id FROM dojos_ninjas.ninjas  ORDER BY id DESC LIMIT 1;
